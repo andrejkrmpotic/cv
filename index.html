@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Supply Chain Chronicles: Andrej's Journey</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Andrej's interactive comic book CV showcasing 10+ years of supply chain expertise. From SAP mastery to managing 24 global museum locations with 800% inventory growth and AI integration strategies.">
+    <meta name="keywords" content="supply chain management, global logistics, AI integration, project management, team leadership, risk management">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="The Supply Chain Chronicles: Andrej's Interactive Comic CV">
+    <meta property="og:description" content="Discover how I reduced order mistakes by 45%, grew teams by 400%, and manage 150+ tons of exhibits across 24 global locations">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>📦 The Supply Chain Chronicles</h1>
+            <p class="subtitle">From Zagreb to Global Leadership</p>
+            
+            <div class="header-actions">
+                <a href="cv/Andrej-Krmpotic-CV.pdf" download class="btn btn-primary">
+                    📄 Download CV
+                </a>
+                <div class="contact-options">
+        <a href="https://linkedin.com/in/andrej-k" class="btn btn-linkedin" target="_blank">
+        💼 LinkedIn
+    </a>
+    <button class="btn btn-outline" onclick="copyEmail()">
+        📋 Copy Email
+    </button>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="comic-section">
+            <div class="comic-grid">
+                <div class="comic-panel" onclick="openPanel(1)" data-panel="1">
+                    <img src="images/panel1.png" alt="Back-Office Beginnings" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>2012-2014: Back-Office Beginnings</h3>
+                        <p>From daily invoices to global operations... same focus, exponential growth!</p>
+                        <div class="achievement-badge">SAP Mastery</div>
+                    </div>
+                </div>
+
+                <div class="comic-panel" onclick="openPanel(2)" data-panel="2">
+                    <img src="images/panel2.png" alt="Customer Experience Champion" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>2014-2018: Customer Experience Champion</h3>
+                        <p>Debugging phones and debugging processes... turns out they're basically the same skill!</p>
+                        <div class="achievement-badge">NPS Improvement</div>
+                    </div>
+                </div>
+
+                <div class="comic-panel" onclick="openPanel(3)" data-panel="3">
+                    <img src="images/panel3.png" alt="Warehouse Builder" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>2018-2022: Warehouse Builder</h3>
+                        <p>Warehouse setup achievement unlocked: 45% fewer headaches for everyone!</p>
+                        <div class="achievement-badge achievement-green">45% Error Reduction</div>
+                    </div>
+                </div>
+
+                <div class="comic-panel" onclick="openPanel(4)" data-panel="4">
+                    <img src="images/panel4.png" alt="Team Builder Supreme" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>2023: Team Builder Supreme</h3>
+                        <p>Team building achievement unlocked: 400% growth in awesome humans!</p>
+                        <div class="achievement-badge achievement-green">400% Team Growth</div>
+                    </div>
+                </div>
+
+                <div class="comic-panel" onclick="openPanel(5)" data-panel="5">
+                    <img src="images/panel5.png" alt="Museum Network Commander" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>2023-2025: Global Commander</h3>
+                        <p>Global logistics commander: Making sure museum magic happens on time, every time!</p>
+                        <div class="achievement-badge achievement-green">24 Locations</div>
+                    </div>
+                </div>
+
+                <div class="comic-panel" onclick="openPanel(6)" data-panel="6">
+                    <img src="images/panel6.png" alt="AI Strategist" loading="lazy">
+                    <div class="panel-overlay">
+                        <h3>Future: AI Strategist</h3>
+                        <p>AI integration across all industries: Because every business deserves an upgrade!</p>
+                        <div class="achievement-badge">Cross-Industry AI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>🔧 Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🏭 Operations</h3>
+                    <div class="skills">
+                        <span class="skill-badge">Supply Chain Management</span>
+                        <span class="skill-badge">Global Logistics</span>
+                        <span class="skill-badge">Inventory Optimization</span>
+                        <span class="skill-badge">Risk Management</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>👥 Leadership</h3>
+                    <div class="skills">
+                        <span class="skill-badge">Team Building</span>
+                        <span class="skill-badge">Strategic Planning</span>
+                        <span class="skill-badge">Vendor Management</span>
+                        <span class="skill-badge">Cross-functional Coordination</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>💻 Technology</h3>
+                    <div class="skills">
+                        <span class="skill-badge">Power BI</span>
+                        <span class="skill-badge">AI Integration</span>
+                        <span class="skill-badge">SAP ERP</span>
+                        <span class="skill-badge">Process Automation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Enhanced Modal for full-screen viewing with details -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <div class="modal-container">
+        <!-- Mobile Tab Navigation -->
+        <!-- <div class="mobile-tabs">
+            <button class="tab-btn active" onclick="showTab('image')">📷 Image</button>
+            <button class="tab-btn" onclick="showTab('details')">📋 Details</button>
+        </div> -->
+        
+        <!-- Image Section -->
+        <div class="modal-image-section tab-content active" id="imageTab">
+            <img class="modal-content" id="modalImage" alt="Comic Panel">
+            <div class="modal-navigation">
+                <button class="nav-btn" onclick="previousPanel()">❮</button>
+                <button class="nav-btn" onclick="nextPanel()">❯</button>
+            </div>
+            <div class="modal-counter">
+                <span id="panelCounter">1 / 6</span>
+            </div>
+        </div>
+        
+        <!-- Details Section -->
+        <div class="modal-details-section tab-content" id="detailsTab">
+            <div class="panel-details">
+                <h3 id="panelTitle">Panel Title</h3>
+                <div class="company-info">
+                    <span class="company-name" id="companyName">Company</span>
+                    <span class="time-period" id="timePeriod">Period</span>
+                </div>
+                <p class="panel-description" id="panelDescription">Description</p>
+                
+                <div class="achievements-section">
+                    <h4>🏆 Key Achievements</h4>
+                    <ul id="achievementsList"></ul>
+                </div>
+                
+                <div class="skills-section">
+                    <h4>🔧 Skills</h4>
+                    <div class="skills-tags" id="skillsTags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Andrej Krmpotić. Built with passion for supply chain excellence.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
