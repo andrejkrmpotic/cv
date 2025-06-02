@@ -331,6 +331,14 @@ function openPanel(panelNumber) {
     }
     
     document.body.style.overflow = 'hidden';
+
+    // Track panel views
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'panel_view', {
+            'panel_number': panelNumber,
+            'event_category': 'comic_interaction'
+        });
+    }
 }
 
 // Update panel details function
