@@ -9,6 +9,28 @@
   gtag('js', new Date());
 
   gtag('config', 'G-PYZXXB10EJ');
+    
+  // Track panel views
+  function trackPanelView(panelNumber) {
+    gtag('event', 'panel_view', {
+      'panel_number': panelNumber,
+      'event_category': 'comic_interaction'
+    });
+  }
+  
+  // Track CV downloads
+  function trackCVDownload() {
+    gtag('event', 'cv_download', {
+      'event_category': 'conversion'
+    });
+  }
+  
+  // Track contact button clicks
+  function trackContact() {
+    gtag('event', 'contact_click', {
+      'event_category': 'engagement'
+    });
+  }
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
